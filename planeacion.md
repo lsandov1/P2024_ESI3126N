@@ -1,8 +1,6 @@
 # Planeacion
 
-## Semana 1
-
-### Lunes
+## Lunes
 
 - Presentacion del Profesor
   - Indicar experiencia
@@ -56,9 +54,7 @@
 - Maquina virtual mostrarles el resultado
   no la requeriremos esta semana pero el proximo lunes se revisara status
 
-
-
-### S01 Miercoles
+## S01 Miercoles
 
 Esta sera una clase mas teorica que practica, pero es muy imporante por sus conceptos
 
@@ -107,9 +103,7 @@ Preguntas Generales:
 
 
 
-## Semana 2
-
-### SO2 Lunes
+## SO2 Lunes
 
 De nuevo, una clase mas teorica que practica
 
@@ -117,7 +111,7 @@ De nuevo, una clase mas teorica que practica
   - solucion de dudas
   - la siguiente clase, ya la usaremos
 
-- Actividad por grupos individuales (20min)
+- Actividad por grupos individuales (10min)
 
     - buscar en mi SO (windows, MacOS) la aplicacion de monitoreo de procesos y tratar de enteder las columnas que se presentan
     - dar algunos ejemplos de procesos que
@@ -127,7 +121,7 @@ De nuevo, una clase mas teorica que practica
     - cuantos procesadores tiene mi sistema de computo?
     - cuantos cores hay en cada procesador?
 
-- Book 'Structured Parallel Programming: Patters for efficient Computation' (30 min)
+- Book 'Structured Parallel Programming: Patters for efficient Computation' (20 min)
 
     - Think Parallel
     Figure 1.1
@@ -147,12 +141,27 @@ De nuevo, una clase mas teorica que practica
   3.7  
 
 
-### S03 Miercoles
+## S03 Miercoles
 
-- Revision status de maquina virtual
+- Revision status de maquina virtual (5 min)
+
+- Revision de Slides (30 min)
+  - desde la maquina virtual, obtener documentacion de la llamada de sistema fork
+    - man fork
+    - info fork
+  - ejecutar el comando pstree (si no esta, instalarlo con apt)
+
+- instalar git
 
 - desde la maquina virtual, clonar repositorio
+  https://github.com/lsandov1/P2024_ESI3126N
+- pequena intro a git
+- recomendar su uso
+- compilar algunos de los programas de procesos
 
-- Revision de Slides
-  - desde la maquina virtual, obtener documentacion de la llamada de sistema fork
-  - ejecutar el comando pstree (si no esta, instalarlo con apt)
+## S04 Lunes
+
+- introducion a la herramienta make
+
+Actividad en clase
+- pedir a los alumnos que realizen un Makefile el cual compile todos los programas de procesos
