@@ -161,7 +161,38 @@ De nuevo, una clase mas teorica que practica
 
 ## S04 Lunes
 
-- introducion a la herramienta make
+1. Revision de slides
 
-Actividad en clase
-- pedir a los alumnos que realizen un Makefile el cual compile todos los programas de procesos
+2. Actividades en clase
+
+  2.1 IPC: Signals: en el tema de senales, generar un programa que solo duerma  y usar el commando kill para terminaro
+
+  2.2 Revisar el programa P2024_ESI3126N/1.-Procesos/mem_compartida_ejemplo.c y compilarlo
+    - Semaforos: indicar su uso en el caso de memoria compartida
+
+3. Introducion a la herramienta make
+   3.1 pedir a los alumnos que realizen un Makefile el cual compile todos los programas de procesos
+
+
+## S05 Miercoles
+
+0. Usaremos Google Meet ya que la licencia de Zoom no se resuelve
+
+1. Revision de Actividad 3 por equipo (5 min max por equipo)
+   1.1 preparar su maquina virtual, el grupo que la tenga lista
+   le mando un meet y revisamos en grupo
+   
+1. Revision de Actividad 4
+
+2. Revision de Slides Hilos 1/2
+
+## S0X
+
+Dia feriado
+
+## S06 Miercoles
+
+1. Proponer pequenos cambios en las actividades 3 y 4, dar 1hr
+2. Cada equipo nos mostrara su solucion
+3. Revision de slides
+
