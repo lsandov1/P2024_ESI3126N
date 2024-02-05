@@ -1,5 +1,5 @@
 /*
-  P2024_ESI3126N - Tareas - Actividad 3
+  P2024_ESI3126N - Tareas - Actividad 3.1
   Leonardo Sandoval Gonzalez
 
   1.-Escribir un programa que cree un hijo. El hijo debe escribir: "Soy el hijo" diez veces. El padre debe escribir: "Soy el padre" diez veces. Ambos procesos deberán mostrar concurrentemente sus líneas en pantalla y entre cada linea que escriban deben hacer una pausa de un segundo. El padre debe esperar a que termine el hijo y mostrar el mensaje: "Mi proceso hijo ya ha terminado".
@@ -25,10 +25,6 @@ main(void)
 {
     pid_t pid;
 
-    if (signal(SIGCHLD, SIG_IGN) == SIG_ERR) {
-        perror("signal");
-        exit(EXIT_FAILURE);
-    }
     pid = fork();
     switch (pid) {
     case -1:
