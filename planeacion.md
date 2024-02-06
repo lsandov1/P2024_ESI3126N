@@ -193,13 +193,20 @@ Dia feriado
 ## S06 Miercoles
 
 1. Proponer pequenos cambios en las actividades 3 y 4, dar 1hr
-    3.1
-       - que pasa si quitamos las llamadas a sleep()? y ademas aumentamos las iteraciones?
+   3.1
+   - que pasa si quitamos las llamadas a sleep()? y ademas aumentamos las iteraciones?
    3.2
-       - que pasa si quitamos el el brinco de linea en la funcion que imprime a pantalla? 
+   - que pasa si quitamos el el brinco de linea en la funcion que imprime a pantalla? 
    3.3
-       - utilizar la llamada execl en vez de system (tip: ver man system)
-
+   - utilizar la llamada execl en vez de system (tip: ver man system)
+   4.1
+   - ahora hacer lo mismo que el un proceso nieto termine tanto al padre como al abuelo
+   4.2
+   - sin cambios
+   4.3
+   - sin cambios
+   4.4
+   - sin cambios
    A
 2. Cada equipo nos mostrara su solucion
 3. Revision de slides
