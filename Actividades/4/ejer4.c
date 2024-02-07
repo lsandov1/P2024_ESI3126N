@@ -17,50 +17,74 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <sys/wait.h>
 
 #define SLEEP_PARENT 5
 #define SLEEP_NON_PARENT 20
 
-#define NUM_CHILD 2
-#define NUM_GRAND_CHILD 3
+void create_grandchildren(char *son);
 
 int
 main(void)
 {
 
-  pid_t parent_pid, pid;
-
-  for(int i=0; i < 3; i++)
-    {
-      pid = fork();
-      if (!parent_id)
-        {
-          signal(SIGQUIT, sigquit);
-          sleep(SLEEP_NON_PARENT);
-        }
-    }
+  pid_t pid;
 
   pid = fork();
-  if (!pid)
-    signal(SIGQUIT, sigquit);
-
-  fork();
-
-  if(getpid()==pid) {
-
+  if (pid == 0)
+    {
+      printf("1C\n");
+      create_grandchildren("1C");
+      sleep(SLEEP_NON_PARENT);
+      exit(0);
+    }
+  else {
+    pid = fork();
+    if (pid == 0)
+      {
+        printf("2C\n");
+        create_grandchildren("2C");
+        sleep(SLEEP_NON_PARENT);
+        exit(0);
+      }
+    printf("1P\n");
+    sleep(SLEEP_PARENT);
+    // TODO: matar todos los hijos y nietos
+    wait(NULL);
   }
-  switch (pid) {
-    case -1:
-      perror("fork");
-      exit(EXIT_FAILURE);
-    case 0:
-      sleep(SLEEP_CHILD);
-      puts("Child exiting.");
-      exit(EXIT_SUCCESS);
-    default:
-      printf("Child is PID %jd\n", (intmax_t) pid);
-      sleep(SLEEP_PARENT);
-      puts("Parent exiting.");
-      exit(EXIT_SUCCESS);
+}
+
+void create_grandchildren(char *son)
+{
+  pid_t pid;
+  pid = fork();
+  if (pid == 0)
+    {
+      // primer nieto
+      printf("%s-1GC\n",son);
+      sleep(SLEEP_NON_PARENT);
+      exit(0);
+    }
+  else
+    {
+      pid = fork();
+      if (pid == 0)
+        {
+          // segundo nieto
+          printf("%s-2GC\n",son);
+          sleep(SLEEP_NON_PARENT);
+          exit(0);
+        }
+      else
+        {
+          pid = fork();
+          if (pid == 0)
+            {
+              // tercer nieto
+              printf("%s-3GC\n",son);
+              sleep(SLEEP_NON_PARENT);
+              exit(0);
+            }
+        }
     }
 }
