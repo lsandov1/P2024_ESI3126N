@@ -11,7 +11,7 @@
 /* de trapecios en lugar de rectángulos, lo que proporciona una estimación más */
 /* precisa. */
 
-/* En este caso tenemos la función f(x) = sqrt(1-y2), que si graficamos esta función de */
+/* En este caso tenemos la función f(x) = sqrt(1-x^2), que si graficamos esta función de */
 /* 0 a 1 nos da como resultado un cuarto de círculo. Para hacer el cálculo de PI es */
 /*    necesario calcular el área que hay debajo del cuarto del círculo y el resultado */
 /* multiplicarlo por 4. */
