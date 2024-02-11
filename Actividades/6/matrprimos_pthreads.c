@@ -3,7 +3,7 @@
 #include <unistd.h>
 #include <math.h>
 #include <sys/time.h>
-
+#include <pthread.h>
 
 #define SIZE 2000
 
@@ -12,15 +12,36 @@
 
 int mat[SIZE][SIZE];
 
+#define NTHREADS 16
+
 void initmat(int mat[][SIZE]);
 int countnonzeroes(int mat[SIZE][SIZE]);
 int isprime(int n);
 void printmat(int mat[][SIZE]);
+void *tfunc(void *args);
+
+void *tfunc(void *args)
+{
+  /* compute index ranges */
+  int tnum = *((int *) args);
+  int i_start = tnum * SIZE/NTHREADS;
+  int i_end = (1+tnum) * SIZE/NTHREADS;
+
+  printf("thread %d start %d end %d\n",tnum, i_start, i_end);
+
+  int i,j;
+  for(i=i_start;i<i_end;i++)
+    for(j=0;j<SIZE;j++)
+      if(!isprime(mat[i][j]))
+        mat[i][j]=0;
+}
 
 int main()
 {
   struct timeval ts_start, ts_end, ts_res;
-  int i,j;
+  int i;
+  pthread_t tid[NTHREADS];
+  int targs[NTHREADS];
   int count;
 
   // Inicializa la matriz con números al azar
@@ -29,10 +50,13 @@ int main()
   gettimeofday(&ts_start, NULL);
   {
     // Eliminar de la matriz todos los números que no son primos
-    for(i=0;i<SIZE;i++)
-      for(j=0;j<SIZE;j++)
-        if(!isprime(mat[i][j]))
-          mat[i][j]=0;
+    for(i=0;i<NTHREADS;i++){
+      targs[i] = i;
+      pthread_create(&tid[i],NULL,tfunc,&targs[i]);
+    }
+
+    for(i=0;i<NTHREADS;i++)
+      pthread_join(tid[i],NULL);
   }
   gettimeofday(&ts_end, NULL);
 
@@ -46,7 +70,6 @@ void initmat(int mat[][SIZE])
 {
   int i,j;
   int count=0;
-
   srand(getpid());
 
   for(i=0;i<SIZE;i++)
