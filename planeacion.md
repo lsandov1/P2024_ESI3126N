@@ -211,3 +211,12 @@ Dia feriado
 2. Cada equipo nos mostrara su solucion
 3. Revision de slides
 
+## S07
+
+0. Revision Actividad 2
+1. Revision Actividad 5
+2. Revision Actividad 6
+   - Revision de tiempos
+   - Revision de cambios (diff)
+   - Revision de desempen~o
+     - cual es el uso del CPU en cada caso? (/usr/bin/time)
