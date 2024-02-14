@@ -12,7 +12,7 @@
 
 int mat[SIZE][SIZE];
 
-#define NTHREADS 16
+#define NTHREADS 4
 
 void initmat(int mat[][SIZE]);
 int countnonzeroes(int mat[SIZE][SIZE]);
@@ -27,7 +27,7 @@ void *tfunc(void *args)
   int i_start = tnum * SIZE/NTHREADS;
   int i_end = (1+tnum) * SIZE/NTHREADS;
 
-  printf("thread %d start %d end %d\n",tnum, i_start, i_end);
+  printf("Thread ID %lld start %d end %d\n", pthread_self(), i_start, i_end);
 
   int i,j;
   for(i=i_start;i<i_end;i++)
