@@ -213,10 +213,38 @@ Dia feriado
 
 ## S07
 
-0. Revision Actividad 2
-1. Revision Actividad 5
-2. Revision Actividad 6
-   - Revision de tiempos
-   - Revision de cambios (diff)
-   - Revision de desempen~o
-     - cual es el uso del CPU en cada caso? (/usr/bin/time)
+1. Revision Actividad 2
+2. Revision Actividad 5
+3. Revision Actividad 6
+   3.1 Revision de tiempos
+   3.2 Revision de cambios (diff)
+   3.3 Revision de desempen~o
+     3.3.1 cual es el uso del CPU en cada caso? (/usr/bin/time)
+     3.3.2 que sucede cuando tenemos mas hilos que cores?
+
+## S08
+
+(20 min)
+1. POSIX Mutex 
+  Revisar los siguientes dos videos
+  1. https://www.youtube.com/watch?v=vxq7poCZyp8 
+     condicion de carrera o condicion de concurso
+     seccion critica con pthreads
+  2. https://www.youtube.com/watch?v=OEhjG2JbLqg
+  
+
+(1hr)
+2. De manera individual, realizar en clase el  ejercicio retador de la actividad 6 
+   Para los equipos que hicieron el anterior ejercicio, intenar cuaquiera de
+   https://chat.openai.com/c/a122b529-7495-4bfe-b4d2-2221bbc1f9dc
+
+(10min)
+3. https://chat.openai.com/c/a122b529-7495-4bfe-b4d2-2221bbc1f9dc
+
+(15min)
+4. Revision de Slides S07
+
+?
+5. Revision de Actividad SO7
+
+
