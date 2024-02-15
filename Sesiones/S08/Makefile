@@ -1,10 +1,13 @@
-PARALLELCOUNT= parallelcount parallelcount_mutex
+PARALLELCOUNT= parallelcount parallelcount_mutex_contention parallelcount_mutex
 TAYLOR=taylor taylor_pthreads
 
 all: $(PARALLELCOUNT) $(TAYLOR)
 
 parallelcount: parallelcount.c
 	gcc -o parallelcount parallelcount.c -pthread
+
+parallelcount_mutex_contention: parallelcount_mutex_contention.c
+	gcc -o parallelcount_mutex_contention parallelcount_mutex_contention.c -pthread
 
 parallelcount_mutex: parallelcount_mutex.c
 	gcc -o parallelcount_mutex parallelcount_mutex.c -pthread

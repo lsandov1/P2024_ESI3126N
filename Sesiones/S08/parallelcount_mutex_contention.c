@@ -12,12 +12,9 @@ static pthread_mutex_t mtx = PTHREAD_MUTEX_INITIALIZER;
 void *tfunc(void *args)
 {
   int i;
-  int local=0;
   int s;
 
   for(i=0;i<ITERS;i++)
-    local++;
-
   {
     // Start of Critical path/section
     s = pthread_mutex_lock(&mtx);
@@ -25,7 +22,7 @@ void *tfunc(void *args)
       fprintf(stderr, "pthread_mutex_lock failed");
       exit(s);
     }
-    global +=local;
+    global++;
     s = pthread_mutex_unlock(&mtx);
     if (s!=0) {
       fprintf(stderr, "pthread_mutex_unlock failed");
