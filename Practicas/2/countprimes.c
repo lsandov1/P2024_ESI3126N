@@ -6,13 +6,20 @@
 
 int isprime(int n);
 
-int main()
+int main(int argc, char *argv[])
 {
-  int i, start, end, count;
+  int i, start, end, count = 0;
 
-  start = 1;
-  end = 10000000;
-  count = 0;
+  if (argc != 3)
+    {
+      fprintf(stderr, "usage: %s <start> <end>", argv[0]);
+      exit(-1);
+    }
+  else
+    {
+      start = atoi(argv[1]);
+      end = atoi(argv[2]);
+    }
 
   for(i=start;i<=end;i++)
     if (isprime(i))
