@@ -248,3 +248,28 @@ Dia feriado
 5. Revision de Actividad SO7
 
 
+## S09
+
+1. Realizar el cuestionario de repaso examen 1
+https://canvas.iteso.mx/courses/38111/quizzes/59843
+
+2. Revisar actividad pasada, Taylor Series usando Pthreads
+
+3. Revisar codigo fuente
+
+    /home/lsandova/P2024_ESI3126N/1.-Procesos/mem_compartida_ejemplo.c
+
+4. Arranque Practica 2
+
+3. Revisar Practica 1
+
+## S10
+
+1. Examen
+
+2. Demo de Practica 1
+
+## S11
+
+1. Revision Practica 1 y 2
+
