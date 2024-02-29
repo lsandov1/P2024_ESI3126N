@@ -273,3 +273,9 @@ https://canvas.iteso.mx/courses/38111/quizzes/59843
 
 1. Revision Practica 1 y 2
 
+
+## S12
+
+1. Revision de Actividad 8
+2. Revision de Actividad 9
+3. Revision de Actividad 10
