@@ -263,30 +263,36 @@ https://canvas.iteso.mx/courses/38111/quizzes/59843
 
 3. Revisar Practica 1
 
-## S10
+## Examn
 
 1. Examen
 
 2. Demo de Practica 1
 
-## S11
+## S10
 
 1. Revision Practica 1 y 2
 
 
-## S12
+## S11
 
 1. Revision de Actividad 8
 2. Revision de Actividad 9
 3. Revision de Actividad 10
 
-## S13
+## S12
 
 1. Realizar la encuesta de medio termino
 2. Revision Actividad 10 (ver solucion `act10.md` en github)
 3. Revision de los algoritmos de Dekker y Peterson
-4. Revision Actividad 11 (ver solucion en `act11.md` en github)
-5. Actividad. Utlizar el algoritmo de Petterson para el siguiente problema usando 2 hilos
+4. Revision Actividad 11
+5. Retos Previo a Practica 3. Elegir uno de estos retos, por cada problema resuelto, +5 extra en su practica 3 por cada ejercicio presentado, aun
+   sin terminar del todo.
+  1. En las soluciones de software para la solucion del problema de la concurrencia, en primer intento
+     se comento que NO funcionaba. Explicar el porque.
+
+  2. Utlizar cualquier solucion por Software o Hardware (SW=4 intento|Peterson|Dekker HW=test&set|xcgh) para el siguiente problema usando 2 hilos.
+     +5 puntos extra en practica 3 por cada algoritmo, presentar codigo y pruebas al
 
 ```
 int cuenta=0;
@@ -304,6 +310,8 @@ Probarlo con
 ```
 $ while true; do ./cuenta_peterson ; done | uniq
 ```
+
+
 
 5 puntos extras en el siguiente examen al que lo resuelva correctamente.
 
