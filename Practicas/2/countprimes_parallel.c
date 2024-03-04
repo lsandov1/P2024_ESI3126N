@@ -87,7 +87,7 @@ int countprimes(int num_proc, int offset, int range)
   // place result in variable at share memory
   count[num_proc] = proc_count;
 
-  //printf("number of local primes %d %d %d %d\n", num_proc, start, end, proc_count);
+  printf("number of local primes %d %d %d %d\n", num_proc, start, end, proc_count);
 
   // exiting the process is important, otherwise execution
   // thread continues on main

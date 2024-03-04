@@ -16,14 +16,22 @@ void *tfunc(void *args)
   int j = 1-i;
   int k;
 
-  for(k=0;k<ITERS;k++)
-    {
-      flag[i] = 1;
-      turno = j;
-      while (flag[j] && turno==j) {}; // Espera
-      cuenta++; //CS
-      flag[i] = 0;
-    }
+  printf("i = %d j = %d cuenta = %d\n", i, j, cuenta);
+
+  // enter critical section
+  flag[i] = 1;
+  turno = j;
+  while (flag[j] && turno==j) {}; // busy-wait
+
+  // critical section
+  {
+    for(k=0;k<ITERS;k++)
+      cuenta++;
+  }
+  // end of critical section
+
+  // leave critical section
+  flag[i] = 0;
 }
 
 int main()

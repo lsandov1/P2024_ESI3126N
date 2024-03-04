@@ -279,3 +279,31 @@ https://canvas.iteso.mx/courses/38111/quizzes/59843
 1. Revision de Actividad 8
 2. Revision de Actividad 9
 3. Revision de Actividad 10
+
+## S13
+
+1. Realizar la encuesta de medio termino
+2. Revision Actividad 10 (ver solucion `act10.md` en github)
+3. Revision de los algoritmos de Dekker y Peterson
+4. Revision Actividad 11 (ver solucion en `act11.md` en github)
+5. Actividad. Utlizar el algoritmo de Petterson para el siguiente problema usando 2 hilos
+
+```
+int cuenta=0;
+
+void total()
+{
+    int i;
+    for(i=0;i<1000;i++)
+       cuenta++;
+}
+```
+
+Probarlo con
+
+```
+$ while true; do ./cuenta_peterson ; done | uniq
+```
+
+5 puntos extras en el siguiente examen al que lo resuelva correctamente.
+
