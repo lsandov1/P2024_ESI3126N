@@ -1,6 +1,6 @@
 all: semsejemplo1 semsprodcons_threads semsprodcons_proc
 
-semsejemplo1: semsejemplo1.c
+semsejemplo1: semsejemplo1.c semaphoresarr.c semaphoresarr.h
 	gcc -o semsejemplo1 semsejemplo1.c semaphoresarr.c
 
 semsprodcons_threads: semsprodcons_threads.c

@@ -4,7 +4,7 @@
 #include <math.h>
 #include <sys/time.h>
 
-#define ITERS 1000000
+#define ITERS 10000000
 
 int main()
 {

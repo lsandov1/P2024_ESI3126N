@@ -11,7 +11,7 @@
 #include <sys/wait.h>
 #include "semaphoresarr.h"
 
-#define NPROCS 3
+#define NPROCS 10
 
 int proceso(int n);
 
