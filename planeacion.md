@@ -315,3 +315,19 @@ $ while true; do ./cuenta_peterson ; done | uniq
 
 5 puntos extras en el siguiente examen al que lo resuelva correctamente.
 
+
+## S13
+
+1. Revision de Actividad de S12.
+
+2. Breve intro a la optimizacion a traves del compilador
+   revisar el man page de gcc y localizar los parametros -O<n>
+   compilar la practica 1 y 2 con banderas de optimizacion y ver resultados de desempeno
+
+3. Revisar brevemente el tema de los semaforos
+
+3. Introduccion a los semaforos SysV, ver ejemplo /home/lsandova/P2024_ESI3126N/3.-Sincronizaciвn y comunicaciвn/Semаforos/semsejemplo1.c
+   tomar en cuenta la libreria ver la libreria brevemente
+
+4. Actividad. Usar chatgpt para generar un programa de semaforos de tipo sysv, entender el
+programa y ejecutarlo.
