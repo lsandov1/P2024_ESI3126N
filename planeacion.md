@@ -331,3 +331,27 @@ $ while true; do ./cuenta_peterson ; done | uniq
 
 4. Actividad. Usar chatgpt para generar un programa de semaforos de tipo sysv, entender el
 programa y ejecutarlo.
+
+
+## S14
+
+1. Revision de la Actividad EN CLASE de S12
+
+2. Revision de la Actividad S13
+
+3. Revision de nueva cuenta de los semaforos SysV
+
+4. Presentacion de la practica 3
+   3.1 En clase, revisar /home/lsandova/repos/iteso/P2024_ESI3126N/3.-Sincronizaciвn y comunicaciвn/Problemas de concurrencia/mercator_proc.c
+   3.2 Crear un Makefile que nos ayude a compilar `mercator_proc.c`
+   3.3 Revisar resultado
+   3.4 breve analisis del desepen~o del binario usando la herramienta perf
+   `sudo perf record ./mercator_proc`
+   `sudo perf report`
+   Samples: 234K of event 'cpu_core/cycles/P', Event count (approx.): 246711056455
+   Overhead  Command        Shared Object      Symbol
+   74.33%  mercator_proc  mercator_proc      [.] get_member
+   18.61%  mercator_proc  mercator_proc      [.] master_proc
+    7.03%  mercator_proc  mercator_proc      [.] proc
+
+
