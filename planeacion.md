@@ -328,6 +328,7 @@ $ while true; do ./cuenta_peterson ; done | uniq
 
 3. Introduccion a los semaforos SysV, ver ejemplo /home/lsandova/P2024_ESI3126N/3.-Sincronizaciвn y comunicaciвn/Semаforos/semsejemplo1.c
    tomar en cuenta la libreria ver la libreria brevemente
+   <!--  -->
 
 4. Actividad. Usar chatgpt para generar un programa de semaforos de tipo sysv, entender el
 programa y ejecutarlo.
@@ -342,16 +343,19 @@ programa y ejecutarlo.
 3. Revision de nueva cuenta de los semaforos SysV
 
 4. Presentacion de la practica 3
-   3.1 En clase, revisar /home/lsandova/repos/iteso/P2024_ESI3126N/3.-Sincronizaciвn y comunicaciвn/Problemas de concurrencia/mercator_proc.c
-   3.2 Crear un Makefile que nos ayude a compilar `mercator_proc.c`
-   3.3 Revisar resultado
-   3.4 breve analisis del desepen~o del binario usando la herramienta perf
-   `sudo perf record ./mercator_proc`
-   `sudo perf report`
+   - En clase, revisar /home/lsandova/repos/iteso/P2024_ESI3126N/3.-Sincronizaciвn y comunicaciвn/Problemas de concurrencia/mercator_proc.c
+   - Crear un Makefile que nos ayude a compilar `mercator_proc.c`
+   - Revisar resultado
+   - reve analisis del desepen~o del binario usando la herramienta `perf`
+
+   ```
+   sudo perf record ./mercator_proc
+   sudo perf report
    Samples: 234K of event 'cpu_core/cycles/P', Event count (approx.): 246711056455
    Overhead  Command        Shared Object      Symbol
    74.33%  mercator_proc  mercator_proc      [.] get_member
    18.61%  mercator_proc  mercator_proc      [.] master_proc
     7.03%  mercator_proc  mercator_proc      [.] proc
+  ```
 
 
