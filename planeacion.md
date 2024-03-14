@@ -367,3 +367,8 @@ programa y ejecutarlo.
 
 3. Monitores en Java
    mostrar ejemplos
+
+
+## S16
+
+1. Revision de semaforos SysV, ver y ejecutar ejemplos dentro de P2024_ESI3126N/3.-Sincronizaciвn y comunicaciвn/Mensajes/.

@@ -1,5 +1,7 @@
 /*
- * En esta versión el receive es bloquente 
+ * En esta versión
+   - send es no-bloqueante
+   - receive es bloquente
  */
 #include <stdio.h>
 #include <stdlib.h>
