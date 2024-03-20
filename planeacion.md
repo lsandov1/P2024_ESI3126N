@@ -371,4 +371,30 @@ programa y ejecutarlo.
 
 ## S16
 
-1. Revision de semaforos SysV, ver y ejecutar ejemplos dentro de P2024_ESI3126N/3.-Sincronizaciвn y comunicaciвn/Mensajes/.
+Problemas de Concurrencia sesion 7
+
+
+30 min preparacion / 30 min de presentacion
+1. Cada equipo elegira la solucion con monitores en java, entedera, compilara y ejecutara dicha solucion.
+   Dicho equipo explicara la solucion en clase e identificara lo siguiente
+   1. cual es monitor?
+   2. cuales son sus metodos?
+   3. Si en Java ejecutas la sentencia notifyAll() se desbloquean todos los hilos que están bloqueados en la sentencia wait(), explica por qué solamente uno que es el siguiente jugador es el que continua.
+
+2. Revision Actividad 15
+3. Revision Practica 3
+   1. soluciones con pseudocodigo
+   2. revision los equipos que la hayan terminado
+
+## S17
+
+Problemas de Concurrencia sesion 8
+
+1. Revision de 'paso de mensajes' con SysV, ver y ejecutar ejemplos dentro de P2024_ESI3126N/3.-Sincronizaciвn y comunicaciвn/Mensajes/.
+3. Presentacion Practica 4
+
+## S18
+
+Interbloqueo
+
+1. Repaso Parcial 2
