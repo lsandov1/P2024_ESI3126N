@@ -1,0 +1,40 @@
+// global constants
+double x = 1.0;
+
+// pointers to shared memory
+double *sums;
+int *proc_count;
+int *start_all;
+double *res;
+
+void proc () {
+
+  // busy wait
+  while (!(*start_all));
+
+  // compute partial series
+
+  (*proc_count)++
+
+  exit
+}
+
+void master_proc() {
+  *start_all=1;
+
+  //busy wait
+  while (*proc_count != NPROCS) ;
+
+  // compute total sum by summing partial sums
+
+  exit
+}
+
+int main() {
+
+  // create NPROCS child processes which call proc()
+
+  // create one child process which calls master_proc()
+
+  // print result
+}

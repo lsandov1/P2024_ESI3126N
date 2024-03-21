@@ -1,0 +1,55 @@
+/*
+        This solution employs two signed semaphores
+*/
+
+// global constants
+double x = 1.0;
+
+// pointers to shared memory
+double *sums;
+int *proc_count;
+int *start_all;
+double *res;
+
+void proc () {
+
+  semwait(semarr,SEM_ARRANQUE);
+  // compute partial series
+  semsignal(semarr,SEM_TERMINADO);
+
+  exit
+}
+
+void master_proc() {
+
+  // start all producers
+  for(i=0; i<NPROCS; i++) {
+    semsignal(semarr,SEM_ARRANQUE);
+  }
+  // wait for producers to complete
+  for(i=0; i<NPROCS; i++) {
+    semwait(semarr,SEM_TERMINADO);
+  }
+
+  // compute total sum by summing partial sums
+
+  exit
+}
+
+SEM_ID semarr;
+enum {SEM_ARRANQUE,SEM_TERMINADO};  // Semáforos 0 y 1
+
+int main() {
+
+  // Creación del arreglo de semáforos
+  semarr=createsemarray((key_t) 0x4008,2);
+
+  initsem(semarr,SEM_ARRANQUE,0);
+  initsem(semarr,SEM_TERMINADO,0);
+
+  // create NPROCS child processes which call proc()
+
+  // create one child process which calls master_proc()
+
+  // print result
+}
