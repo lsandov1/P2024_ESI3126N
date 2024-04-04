@@ -390,10 +390,28 @@ Problemas de Concurrencia sesion 7
 
 Problemas de Concurrencia sesion 8
 
-1. Revision de 'paso de mensajes' con SysV, ver y ejecutar ejemplos dentro de P2024_ESI3126N/3.-Sincronizaciвn y comunicaciвn/Mensajes/.
-3. Presentacion Practica 4
+(- Revision de Actividad 15, programas en java, a peticion de un grupo)
+
+(- Revision de Actividad 16, 30 hr)
+
+- Revision de 'paso de mensajes' con SysV 30 hr
+   1. P2024_ESI3126N/3.-Sincronizaciвn y comunicaciвn/Mensajes/.
+   - mensaje1.c
+   - mensaje2.c
+   - jugadores_domino.c
+   - create_queue.c & send_message.c & receive_message.c
+
+- Presentacion Practica 4. 15 min
+
+- Revision de practica 3, los revisados se pueden ir saliendo de la sesion del dia
+
 
 ## S18
+
+- Revision 16
+- Revision 17
+- 
+- Revision de Practica 3 (los faltantes)
 
 Interbloqueo
 
