@@ -17,8 +17,10 @@ void filosofo(int i)
     while(n--)
     {
         semwait(semaforo,tenedor_i);
+        printf("tenedor_i %d retenido\n", tenedor_i);
         usleep(100000);
         semwait(semaforo,tenedor_d);
+        printf("tenedor_d %d retenido\n", tenedor_d);
         printf("Filósofo %d comiendo\n",i);
         usleep(500000);
         semsignal(semaforo,tenedor_d);
