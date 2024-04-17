@@ -1,6 +1,6 @@
 Hacer los siguientes ejercicios:
 
-# 1
+## 1
 Si tengo la memoria del sistema dividida en páginas de 4 Kb. y ocurren los siguientes eventos
 
     Se carga un proceso A de 14 Kb.
@@ -11,15 +11,15 @@ Si tengo la memoria del sistema dividida en páginas de 4 Kb. y ocurren los sigu
     Se expulsa el proceso B de la memoria
     Se carga un proceso F de 11 Kb.
 
-## 1.1
+### 1.1
 
 Haz el dibujo indicando como queda la memoria
 
-## 1.2
+### 1.2
 
 ¿Cómo quedan las tablas de páginas para cada proceso?
 
-## 1.3
+### 1.3
 
 Si la dirección lógica es de 20 bits, ¿Cuántos bits se usan para el número de página y cuántos para el desplazamiento?
 
@@ -27,7 +27,7 @@ Si la dirección lógica es de 20 bits, ¿Cuántos bits se usan para el número 
 `8` bits para el numero de pagina
 `12` bits para el desplazamiento
 
-## 1.4
+### 1.4
 
 Si para el proceso F tengo la dirección lógica `14FBh`, ¿A qué dirección física debe ser traducida?
 
@@ -52,11 +52,11 @@ Considera que ahora tenemos la memoria del sistema dividida en páginas de 1 Kb.
     Se expulsa el proceso B de la memoria
     Se carga un proceso F de 3.6 Kb.
 
-1.1.- Haz el dibujo indicando como queda la memoria
+### 2.1 Haz el dibujo indicando como queda la memoria
 
-1.2.- ¿Cómo quedan las tablas de páginas para cada proceso?
+### 2.2 ¿Cómo quedan las tablas de páginas para cada proceso?
 
-1.3.- Si la dirección lógica es de 18 bits, ¿Cuántos bits se usan para el número de página y cuántos para el desplazamiento?
+### 2.3 Si la dirección lógica es de 18 bits, ¿Cuántos bits se usan para el número de página y cuántos para el desplazamiento?
 
 `8` bits para el numero de pagina
 `10` bits para el desplazamiento
@@ -75,6 +75,6 @@ por lo tanto los primeros `8` bits representan la posicion en la tabla de pagina
 Al marco indicado por el indice `00 0000 01` binario o `0x1` hexadecimal con desplazamiento (en memoria fisica) de `01 1110 1010`
 o `0x1EA`
 
-3.- ¿Qué aprendiste?
+## ¿Qué aprendiste?
 
 Subir un archivo en formato PDF con las respuestas a los problemas
