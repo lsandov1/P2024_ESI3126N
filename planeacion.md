@@ -410,9 +410,79 @@ Problemas de Concurrencia sesion 8
 
 - Revision 16
 - Revision 17
-- 
 - Revision de Practica 3 (los faltantes)
 
-Interbloqueo
 
-1. Repaso Parcial 2
+## Examen
+
+- Semana 12: Los que tengan dudas respecto a sus promedio parcial o faltas, me contactan despues del examen.
+  - Ya no habra practicas por lo tanto ya se sabe el 30%
+  - Faltan dos examenes, aun se puede sumar 33.33%
+
+- Examen
+
+## S19
+
+- Revision Actividad 18
+- Revision Practica 3
+- Revision Practica 4
+
+## S20
+
+- 15 min Repaso slides S20
+
+- La solucion de estas contara como su asistencia
+
+- 10 min Ejercicio en Clase
+En un sistema de cómputo que emplea paginación utiliza registros asociativos en el CPU para acelerar el proceso de traducción de 
+direcciones físicas a direcciones lógicas, cada referencia a memoria del procesador se lleva un tiempo de 15 nanosegundos, 
+y cada referencia a un registro asociativo se lleva 5 nanosegundo. Si el porcentaje de aciertos a los registros asociativos 
+es del 65 %, determine el tiempo de acceso efectivo a la memoria.
+
+
+Busqueda asociativa = epsion = `5` nanosegundos
+Ciclo de moemria = `15` nanosegundos
+Tasa de aciertos = `65%`
+
+```
+EAT = (15 + 5) x 0.65 + (30 + 5)(1 - 0.65) = 30 + 5 - 10 x 0.65 = 35 - 6.5 = 28.5 nanosegundos
+```
+
+- Un sistema implementa un espacio de direcciones virtual paginado para cada proceso usando una tabla de páginas de un nivel, 
+el tamaño máximo del espacio de direcciones virtual es de 2^64 bytes y tenemos que cada pagina mide 4Kb,
+¿ Cuantas paginas podremos tener en nuestro proceso?
+¿ Si cada elemento en la tabla de paginas mide 4 bytes, cuanto medira cada tabla en memoria?
+¿ Si tenemos una memoria de 64Gb, cabra una pagina completa?
+
+- Un sistema implementa un espacio de direcciones virtual paginado para cada proceso usando una tabla de páginas de dos nivel, 
+el tamaño máximo del espacio de direcciones virtuales es de 2^64 bytes y tenemos que cada pagina mide 4Kb, ademas
+que el taman~o del directorio de paginas es de 12 bits y una memoria fisica de 32 Gb
+
+¿Cuántos bits se requieren por cada entrada en la tabla de páginas externa?
+¿Cuántos bits se requieren por cada entrada en la tabla de páginas interna?
+¿Cuál es el número máximo de entradas en una tabla de páginas interna?
+¿Cuántos bits hay en una dirección virtual?
+
+    1. Cuantas paginas podremos tener en nuestro proceso?
+    2. Si cada elemento en la tabla de paginas mide 4 bytes, cuanto medira cada tabla en memoria?
+    3. Si tenemos una memoria de 64Gb, cabra una pagina completa?
+    
+
+32 Gb. El tamaño de página es de 4 Kb
+
+- Repaso Slides S20
+
+- Actividad 19
+- Actividad 19
+- Actividad 20
+
+
+## S21
+
+- iae
+
+- act 19, 20
+
+## S22
+
+- revision act 21
