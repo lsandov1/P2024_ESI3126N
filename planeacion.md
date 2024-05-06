@@ -486,3 +486,15 @@ que el taman~o del directorio de paginas es de 12 bits y una memoria fisica de 3
 ## S22
 
 - revision act 21
+
+Equipos sin revisar
+
+Practica 3 - Grupo 5
+Practica 3 - Grupo 1
+Practica 4 - Grupo 1
+Practica 4 - Grupo 3
+Practica 4 - Grupo 5
+
+## S25
+
+- Revision Act23, Act24
